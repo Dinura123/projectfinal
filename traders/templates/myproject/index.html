@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+
+  <title>Exotic Auto Traders</title>
+   {% load static %}
+
+  <link rel="icon" href="{% static 'images/car.png' %}">
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+  <!--
+
+-->
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="{% static 'css/fontawesome.css' %}">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.css' %}">
+
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="preloader">
+    <div class="jumper">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- Header -->
+  <header class="">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'index' %}">
+          <h2> Exotic <em> Auto </em> Traders</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Vehicle">Our Vehicles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact">Contact Us</a>
+            </li>
+          </ul>
+          <ul class ="nav navbar-nav navbar-right">
+          <li><a href="sign-up" class="btn btn-outline-danger  mb-3 py-1" role="button">Sign Up</a></li>
+          </ul>
+          <ul class ="nav navbar-nav navbar-right p-3">
+          <li><a href="sign-in" class="btn btn-outline-danger mb-3 py-1" role="button">Sign In</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Content -->
+  <!-- Banner Starts Here -->
+  <div class="banner header-text">
+    <div class="owl-banner owl-carousel">
+      <div class="banner-item-01">
+        <div class="text-content">
+          <h4>latest Vehicles</h4>
+          <h2>New Arrivals On Sale</h2>
+        </div>
+      </div>
+      <div class="banner-item-02">
+        <div class="text-content">
+          <h4> Deals</h4>
+          <h2>Get your Dream Vehicle</h2>
+        </div>
+      </div>
+      <div class="banner-item-03">
+        <div class="text-content">
+          <h4>One stop solution</h4>
+          <h2>For All Your Vehicle Problems</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Banner Ends Here -->
+
+  <div class="latest-products">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 justify-content-center">
+          <div class="section-heading">
+            <h2>Recently Added</h2>
+            <a href="Vehicle">View All Products <i class="fa fa-angle-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-item">
+            <a href="#"><img src="static/images/car1.jpg" class="p-1" alt=""></a>
+            <div class="down-content">
+              <a href="#">
+                <h4>BMW 5 SERIES <br> 2019 </h4>
+              </a>
+              <h6>Rs.10,000,00</h6>
+              <p>Bmw 5 Series 2019 sedan car <br> 2000Cc,Petrol,Tiptronic <br> Brand New,Company Warranty </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-item">
+            <a href="#"><img src="static/images/car2.jpg" class="p-1" alt=""></a>
+            <div class="down-content">
+              <a href="#">
+                <h4>Mercedes Benz <br> GLS 500</h4>
+              </a>
+              <h6>Rs 40,000,000</h6>
+              <p>Mercedes Benz GLS 500 2018 <br> 4663Cc,Pertol,Tiptronic <br> Brand New, Full Option.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-item">
+            <a href="#"><img src="static/images/car3.jpg" class="p-1" alt=""></a>
+            <div class="down-content">
+              <a href="#">
+                <h4>BMW i8 <br>Roadster 2019</h4>
+              </a>
+              <h6>Rs 26,500,000</h6>
+              <p>BMW i8 Roadster 2019 <br> 1499Cc,Pertol/Electric,Automatic <br> Brand New, Convertible.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-item">
+            <a href="#"><img src="static/images/car4.jpg" class="p-1" alt=""></a>
+            <div class="down-content">
+              <a href="#">
+                <h4>BMW 320d <br> 2012</h4>
+              </a>
+              <h6>Rs 8,900,000</h6>
+              <p>BMW 320d 2012 <br> 2000Cc,Diesel,Automatic <br> Used, 2nd Onwer .</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-item">
+            <a href="#"><img src="static/images/car5.jpg" class="p-1" alt=""></a>
+            <div class="down-content">
+              <a href="#">
+                <h4>Land Rover Range <br>Evoque </h4>
+              </a>
+              <h6>Rs 12,800,000</h6>
+              <p>Land Rover Range Evoque 2015 <br> 2,000Cc,Diesel,Automatic <br> Used, Suv 4x4, Two door.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-item">
+            <a href="#"><img src="static/images/car6.jpg" class="p-1" alt=""></a>
+            <div class="down-content">
+              <a href="#">
+                <h4>Kia Sportage <br> 2017</h4>
+              </a>
+              <h6>Rs 9,790,000</h6>
+              <p>Kia Sportage 2017 <br> 2,000Cc,Petrol,Tiptronic <br> Brand New, Suv 4x4, Full Option .</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="best-features">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>About Us</h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="left-content">
+            <h4>Looking for the best Vehicles?</h4>
+            <p>Exotic Auto Traders was established on 2004 and specialized on automobile industry for like 15yrs and
+              Exotic Auto Traders has been the best and the largest automobile dealer. In the beginning of the Exotic
+              Auto Traders a single owner imported cars from japan through an online car binding ordering system and he
+              bids and ordered vehicles in good auctions grades and imported to Sri Lanka.</p>
+            <ul class="featured-list">
+              <li><a href="#">All Type Of Vehicle Brands</a></li>
+              <li><a href="#">Excellent Auction Grade Vehicles</a></li>
+              <li><a href="#">After Care Services</a></li>
+              <li><a href="#">Excellent Customer Service</a></li>
+              <li><a href="#">All Under One Roof</a></li>
+            </ul>
+            <a href="about" class="filled-button">Read More</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="right-image">
+            <img src="static/images/about car.jpg" class="rounded" p-1 alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="call-to-action">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 justify-content-center">
+          <div class="left-content">
+            <div class="row">
+              <div class=>
+                <div class="section-heading">
+                  <h2 class="mb-5">Our Services</h2>
+                  <div class="card-deck mt-5">
+                    <div class="card">
+                      <img src="static/images/car buy.jpg" class="card-img-top p-5" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Buying A Car</h5>
+                        <p class="card-text">We are proud of the goodwill and the trust our customers have kept on us
+                          since we began for fifteen years.. This content is a little bit longer.</p>
+                      </div>
+                      <div class="card-footer">
+                        <Large class="text-muted m-2"><a href="about" class="filled-button">More Info</a></Large>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="static/images/car maintain.png" class="card-img-top p-5" x alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Car Maintenance</h5>
+                        <p class="card-text">We are a one-stop solution for your vehicle needs; car sales, spare parts,
+                          maintenance and service and repairing..</p>
+                      </div>
+                      <div class="card-footer">
+                        <large class="text-muted m-2"><a href="about" class="filled-button">More Info</a></Large>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="static/images/support.png" class="card-img-top  p-5" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Support 24/7</h5>
+                        <p class="card-text">Customer is always our priority. We make sure that the customer finds their
+                          dream vehicle among our range..</p>
+                      </div>
+                      <div class="card-footer">
+                        <large class="text-muted m-2"><a href="about" class="filled-button">More Info</a></large>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+              <p>Copyright &copy; 2020 Exotic Auto Traders</P>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    
+
+
+    <!-- Additional Scripts -->
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="{% static 'js/owl.js' %}"></script>
+    <script src="{% static 'js/slick.js' %}"></script>
+    <script src="{% static 'js/isotope.js' %}"></script>
+    <script src="{% static 'js/accordions.js' %}"></script>
+
+
+    <script language="text/Javascript">
+      cleared[0] = cleared[1] = cleared[2] = 0; 
+      function clearField(t) { 
+        if (!cleared[t.id]) { 
+          cleared[t.id] = 1; 
+          t.value = ''; 
+          t.style.color = '#fff';
+        }
+      }
+    </script>
+
+
+</body>
+
+</html>
