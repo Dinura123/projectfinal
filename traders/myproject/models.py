@@ -37,7 +37,7 @@ class Offer(models.Model):
     def __str__(self):
         return self.name
 
-class Message(models.Model):
+class Reservation(models.Model):
     full_name = models.TextField(blank=False)
     email = models.EmailField(max_length=254, blank=False)
     message = models.TextField(blank=False)

@@ -2,7 +2,7 @@ from rest_framework import serializers
 from myproject.models import Car
 from myproject.models import User
 from myproject.models import Offer
-from myproject.models import Message
+from myproject.models import Reservation
 
 class CarSerializer(serializers.ModelSerializer):
     class Meta:
@@ -19,7 +19,7 @@ class OfferSerializer(serializers.ModelSerializer):
         model =Offer
         fields = '__all__'
 
-class MessageSerializer(serializers.ModelSerializer):
+class ReservationSerializer(serializers.ModelSerializer):
     class Meta:
-        model =Message
+        model =Reservation
         fields = '__all__'

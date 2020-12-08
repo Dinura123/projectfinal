@@ -16,6 +16,6 @@ class OfferViewset(viewsets.ModelViewSet):
     queryset = models.Offer.objects.all()
     serializer_class = serializers.OfferSerializer
 
-class MessageViewset(viewsets.ModelViewSet):
-    queryset = models.Offer.objects.all()
-    serializer_class = serializers.MessageSerializer
+class ReservationViewset(viewsets.ModelViewSet):
+    queryset = models.Reservation.objects.all()
+    serializer_class = serializers.ReservationSerializer
