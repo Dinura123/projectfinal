@@ -1,0 +1,25 @@
+{% extends "dashboard_base.html" %}
+
+{% load static %}
+{% block header %}
+{{ block.super }}
+{% endblock %}
+
+{% block title %}{{ block.super }} | Edit Car{% endblock %}
+
+{% block main %}
+
+<h2>Edit car</h2>
+
+<form action="" method="post">
+    {% csrf_token %}
+
+    {% bootstrap_form form layout='inline' %}
+
+    {% buttons %}
+    <a href="{% url 'car' %}"><button class="btn btn-secondary">Cancel</button></a>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    {% endbuttons %}
+</form>
+
+{% endblock %}

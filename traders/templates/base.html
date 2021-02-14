@@ -69,6 +69,14 @@
             <li class="nav-item">
               <a class="nav-link" href="contact">Contact Us</a>
             </li>
+            {% if user.is_authenticated %}
+            {% if request.user.is_superuser %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'dashboard' %}">Dashboard</a>
+            </li>
+            {% endif %}
+            {% endif %}
+
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="signup" class="btn btn-outline-danger  mb-3 py-1" role="button">Sign Up</a></li>
@@ -84,23 +92,23 @@
 
   {% block body %}
 
- {% endblock %}
+  {% endblock %}
 
   {% block footer %}
   <footer>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="inner-content"> 
-          <p class="bg-dark text-danger p-5">Copyright &copy; 2020 Exotic Auto Traders. </p>
-           </div>
+          <div class="inner-content">
+            <p class="bg-dark text-danger p-5">Copyright &copy; 2020 Exotic Auto Traders. </p>
+          </div>
         </div>
       </div>
     </div>
   </footer>
- {% endblock %}
+  {% endblock %}
 
-{% block bootstrapJs %}                         
+  {% block bootstrapJs %}
   <!-- Bootstrap core JavaScript -->
   <script src="{% static 'js/jquery.min.js' %}"></script>
   <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
@@ -126,7 +134,7 @@
     }
   </script>
 
- {% endblock %}
+  {% endblock %}
 </body>
 
 </html>

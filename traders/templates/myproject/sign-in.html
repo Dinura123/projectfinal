@@ -17,14 +17,15 @@
 
 </head>
     <body class="text-center sign-body">
-    <form class="form-sign">
+    <form class="form-sign" method="POST" action="">>
         <img class="mb-4" src="static/images/signin.webp" alt="" width="100" height="100">
         <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        {% csrf_token %}
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="email" id="inputEmail" class="form-control mb-3" placeholder="Email address" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" id="inputPassword" class="form-control  mb-3" placeholder="Password" required>
-        <div class="checkbox mb-3 text-left">
+        <div class="checkbox mb-3 text-left">        
         
         </div>
         <button class="btn btn-lg btn-primary btn-block mb-3" type="submit">Sign in</button>

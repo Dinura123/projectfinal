@@ -1,0 +1,25 @@
+{% extends "dashboard_base.html" %}
+{% load static %}
+{% block header %}
+{{ block.super }}
+{% endblock %}
+
+{% block title %}{{ block.super }} | View Reservation{% endblock %}
+
+{% block main %}
+
+<h2>Reservation</h2>
+
+<section id="view-message">
+    <div class="container my-5 py-5">
+    
+        <p class="my-1">{{message.fullname}}</p>
+        <p class="my-1">{{message.email}}</p>
+        <p class="my-3">{{message.message}}</p>
+        <p class="my-1">{{message.contact number}}</p>
+        <p class="my-1">{{message.created}}</p>
+
+        </div>
+</section>
+
+{% endblock %}

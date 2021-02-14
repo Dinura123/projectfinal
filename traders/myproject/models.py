@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 from phonenumber_field.modelfields import PhoneNumberField
 
 # Create your models here.
@@ -16,13 +17,6 @@ class Car(models.Model):
         return self.brand
 
 
-class User(models.Model):
-    username = models.CharField(max_length=50, blank=False)
-    email = models.EmailField(max_length=254, blank=False)
-    password = models.CharField(max_length=50, blank=False)
-
-    def __str__(self):
-        return self.username
 
 class Offer(models.Model):
     model = models.TextField(blank=False)
@@ -41,6 +35,7 @@ class Reservation(models.Model):
     full_name = models.TextField(blank=False)
     email = models.EmailField(max_length=254, blank=False)
     message = models.TextField(blank=False)
+    contact_number = PhoneNumberField()
     created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
